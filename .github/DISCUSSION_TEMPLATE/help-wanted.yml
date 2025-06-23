@@ -1,0 +1,49 @@
+title: 'Help wanted'
+body:
+  - type: dropdown
+    validations:
+      required: true
+    attributes:
+      label: Application
+      options:
+        - Shlink
+        - Shlink Dashboard
+        - Shlink Web Client
+        - Other (explain in summary)
+  - type: input
+    validations:
+      required: true
+    attributes:
+      label: Application version
+      placeholder: x.y.z
+  - type: dropdown
+    validations:
+      required: true
+    attributes:
+      label: How do you serve the application
+      options:
+        - Docker image
+        - Self-hosted Apache
+        - Self-hosted nginx
+        - Self-hosted RoadRunner
+        - Node.JS server
+        - Other (explain in summary)
+  - type: dropdown
+    attributes:
+      label: Database engine (if any)
+      options:
+        - MySQL
+        - MariaDB
+        - PostgreSQL
+        - MicrosoftSQL
+        - SQLite
+  - type: input
+    attributes:
+      label: Database version
+      placeholder: x.y.z
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Summary
+      value: '<!-- Describe your issue, question or request here. -->'
